@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: '__Inter_d65c78', '__Inter_Fallback_d65c78', 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom premium styles */
+.gradient-overlay {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(29, 78, 216, 0.85) 100%);
+}
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, #1D4ED8 0%, #F97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Centralized container constraint */
+.custom-container {
+  @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+}
+
